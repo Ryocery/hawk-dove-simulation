@@ -38,12 +38,6 @@ impl Simulation {
         self
     }
 
-    fn clear_food_spots(&mut self) {
-        for spot in &mut self.food_spots {
-            spot.clear();
-        }
-    }
-
     pub fn set_iterations(mut self, iterations: u32) -> Self {
         self.iterations = iterations;
 
